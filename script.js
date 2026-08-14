@@ -1,3 +1,7 @@
+/* ═══════════════════════════════════════════
+   AI Text Summarizer
+   Rainer — side projek
+   ═══════════════════════════════════════════ */
 'use strict';
 
 const API = 'https://api.groq.com/openai/v1/chat/completions';
