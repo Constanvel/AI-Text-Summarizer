@@ -78,4 +78,4 @@ Cek alur utama secara manual:
 
 ## Desain
 
-Mengikuti design system **Modernist**: tipografi Archivo, sudut 0px, garis pemisah 2px, aksen merah `#ec3013` khusus untuk aksi utama dan penanda. Satu kolom, lebar maksimal 720px, responsif sampai lebar ponsel.
+ngikutin design system **Modernist**: tipografi Archivo, sudut 0px, garis pemisah 2px, aksen merah `#ec3013` khusus untuk aksi utama dan penanda. Satu kolom, lebar maksimal 720px, responsif sampai lebar ponsel.
