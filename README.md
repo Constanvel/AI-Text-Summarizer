@@ -4,8 +4,7 @@ Ngebantu mendekin kalimat yang panjang. Tempel teks panjang — artikel, notulen
 
 HTML + CSS + JavaScript vanilla. Tanpa framework, tanpa backend, tanpa build step. Ringkasan dibuat lewat [Groq API](https://groq.com) dengan model `llama-3.3-70b-versatile`.
 
-![Screenshot](docs/screenshot.png)
-<!-- TODO: ganti dengan screenshot asli, simpan di docs/screenshot.png -->
+![AI Text Summarizer](docs/screenshot.png)
 
 ## Fitur
 
@@ -22,6 +21,8 @@ HTML + CSS + JavaScript vanilla. Tanpa framework, tanpa backend, tanpa build ste
 
 ```
 AI-Text-Summarizer/
+├── docs/
+│   └── screenshot.png
 ├── index.html      # markup + semua state UI
 ├── style.css       # token & komponen dari design system "Modernist"
 ├── script.js       # semua logic: state, fetch ke Groq, clipboard, counter
@@ -79,3 +80,7 @@ Cek alur utama secara manual:
 ## Desain
 
 Mengikuti design system **Modernist**: tipografi Archivo, sudut 0px, garis pemisah 2px, aksen merah `#ec3013` khusus untuk aksi utama dan penanda. Satu kolom, lebar maksimal 720px, responsif sampai lebar ponsel.
+
+---
+
+**Rainer — side projek**
