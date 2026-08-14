@@ -79,8 +79,12 @@ Cek alur utama secara manual:
 
 ## Desain
 
+<<<<<<< HEAD
 Mengikuti design system **Modernist**: tipografi Archivo, sudut 0px, garis pemisah 2px, aksen merah `#ec3013` khusus untuk aksi utama dan penanda. Satu kolom, lebar maksimal 720px, responsif sampai lebar ponsel.
 
 ---
 
 **Rainer — side projek**
+=======
+ngikutin design system **Modernist**: tipografi Archivo, sudut 0px, garis pemisah 2px, aksen merah `#ec3013` khusus untuk aksi utama dan penanda. Satu kolom, lebar maksimal 720px, responsif sampai lebar ponsel.
+>>>>>>> 7c776bb077c88a57939ab03c828a39b70022f6f4
