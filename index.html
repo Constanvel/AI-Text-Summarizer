@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Text Summarizer</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<main class="wrap">
+
+  <h1>AI Text Summarizer</h1>
+  <p class="lead text-muted">Tempel teks panjang, dapatkan ringkasan singkatnya dalam hitungan detik.</p>
+  <hr class="hr">
+
+  <div class="row">
+    <h6>Teks asli</h6>
+    <span class="text-muted num" id="srcCount">0 kata</span>
+  </div>
+
+  <textarea id="input" class="input ta"
+    placeholder="Tempel atau ketik teks panjang di sini — artikel, notulen rapat, atau dokumen."></textarea>
+
+  <p class="inline-error" id="emptyErr" hidden><span class="bang">!</span>Teks masih kosong. Tempel teks yang ingin diringkas.</p>
+
+  <div class="row row-len">
+    <h6>Panjang ringkasan</h6>
+    <div class="seg">
+      <label class="seg-opt"><input type="radio" name="len" value="short">Singkat</label>
+      <label class="seg-opt"><input type="radio" name="len" value="medium" checked>Sedang</label>
+      <label class="seg-opt"><input type="radio" name="len" value="long">Panjang</label>
+    </div>
+  </div>
+
+  <div class="actions">
+    <button id="run" class="btn btn-primary btn-lg">Ringkas</button>
+    <button id="clear" class="btn btn-secondary btn-lg">Bersihkan</button>
+    <span class="text-muted hint">CTRL + ENTER</span>
+  </div>
+
+  <!-- idle -->
+  <div class="panel text-muted" id="idle">Hasil ringkasan akan muncul di sini.</div>
+
+  <!-- loading -->
+  <div class="panel" id="loading" hidden>
+    <div class="panel-head"><span class="pulse"></span><h6>Meringkas…</h6></div>
+    <div class="track"><div class="track-bar"></div></div>
+    <div class="skeleton">
+      <div class="sk" style="width:96%"></div>
+      <div class="sk" style="width:88%"></div>
+      <div class="sk" style="width:92%"></div>
+      <div class="sk" style="width:54%"></div>
+    </div>
+  </div>
+
+  <!-- done -->
+  <div class="panel" id="result" hidden>
+    <div class="panel-head panel-head-split">
+      <h6 class="accent">Ringkasan</h6>
+      <button id="copy" class="btn btn-secondary btn-sm">Copy</button>
+    </div>
+    <div class="summary" id="summary"></div>
+    <div class="text-muted num out" id="outCount"></div>
+  </div>
+
+  <!-- fail -->
+  <div class="panel" id="error" hidden>
+    <h6 class="accent">Gagal</h6>
+    <div class="fail">
+      <div>
+        <span id="errMsg"></span>
+        <div class="code" id="errCode"></div>
+      </div>
+      <button id="retry" class="btn btn-primary btn-sm">Coba lagi</button>
+    </div>
+  </div>
+
+  <hr class="hr hr-lg">
+
+  <details class="settings" id="settings">
+    <summary><h6>Groq API Key</h6></summary>
+    <div class="field">
+      <label for="apiKey">Disimpan di localStorage browser ini saja, tidak pernah dikirim ke mana pun selain api.groq.com.</label>
+      <div class="key-row">
+        <input id="apiKey" class="input" type="password" placeholder="gsk_..." autocomplete="off" spellcheck="false">
+        <button id="saveKey" class="btn btn-secondary">Simpan</button>
+      </div>
+      <p class="text-muted tiny">Ambil gratis di <a href="https://console.groq.com/keys" target="_blank" rel="noopener">console.groq.com/keys</a>.</p>
+    </div>
+  </details>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
